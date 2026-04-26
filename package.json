@@ -16,7 +16,9 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
